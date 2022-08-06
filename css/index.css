@@ -1,0 +1,210 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1;
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  font-weight: 300;
+  background-color: #F5F5F5;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.product h1 {
+  font-size: 40px;
+  line-height: 1.20525;
+  font-weight: 400;
+}
+.product .product__container {
+  padding: 90px 46px 100px 99px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 67px;
+}
+.product .card-bottom .button {
+  max-height: 64px;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 1.2104166667;
+  padding: 17px 27px 18px 39px;
+}
+.product .card-bottom .button-price {
+  max-height: 64px;
+}
+
+header #header-top {
+  background: #000000;
+  padding: 10px 50px 8px 24px;
+}
+header #header-top .nav-item {
+  margin-left: 25px;
+}
+header #header-top .nav-item.header-cart {
+  position: relative;
+  margin-right: 20px;
+}
+header #header-top .nav-item a {
+  text-decoration: none;
+  color: #F7F7F7;
+}
+header #header-top .nav-item a span {
+  position: absolute;
+  font-size: 30px;
+  bottom: 1px;
+}
+header #header-bottom {
+  padding-left: 25px;
+}
+header #header-bottom .nav-item.line::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+  display: block;
+}
+header #header-bottom .nav-item:hover::after {
+  width: 100%;
+}
+header #header-bottom .nav-item::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: #000000;
+  display: block;
+  transition: 0.5s;
+}
+header #header-bottom .nav-item .nav-link {
+  padding: 15px 0 10px;
+  color: #000000;
+  font-size: 20px;
+  line-height: 1.2;
+}
+header #header-bottom .nav-item:first-of-type {
+  margin-right: 24px;
+}
+header #header-bottom .nav-item:nth-of-type(2) {
+  margin-right: 37px;
+}
+header #header-bottom .nav-item:nth-of-type(3) {
+  margin-right: 39px;
+}
+header #header-bottom .nav-item:nth-of-type(4) {
+  margin-right: 40px;
+}
+
+.carousel__Capstone .carousel-indicators {
+  bottom: -5%;
+}
+.carousel__Capstone .carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  color: rgba(217, 217, 217, 0);
+  border-radius: 50%;
+}
+.carousel__Capstone .carousel-inner {
+  overflow: unset;
+}
+.carousel__Capstone .carousel-inner .carousel-item {
+  position: relative;
+  padding-left: 70px;
+}
+.carousel__Capstone .carousel-inner .carousel-item .carousel-content {
+  position: relative;
+  z-index: 10;
+  max-width: 821px;
+}
+.carousel__Capstone .carousel-inner .carousel-item .carousel-caption {
+  text-align: left;
+  top: 104px;
+  left: 60%;
+  color: #000000;
+}
+.carousel__Capstone .carousel-inner .carousel-item .carousel-caption h3 {
+  font-size: 40px;
+  line-height: 1.21025;
+  font-weight: 300;
+  margin: 0;
+}
+.carousel__Capstone .carousel-inner .carousel-item .carousel-caption p {
+  font-size: 20px;
+  line-height: 1.21;
+  margin-bottom: 40px;
+}
+.carousel__Capstone .carousel-img {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  z-index: 2;
+}
+
+.product--card {
+  background: #F8F8F8;
+}
+.product--card .card-top {
+  padding: 45px 57px 0;
+  margin-bottom: 30px;
+}
+.product--card .card-bottom {
+  text-align: left;
+}
+.product--card .card-bottom .card-title {
+  padding-left: 23px;
+}
+.product--card .card-bottom h3 {
+  font-size: 24px;
+  line-height: 1.2291666667;
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: 200;
+}
+.product--card .card-bottom p {
+  color: rgb(203, 201, 201);
+  font-size: 20px;
+  line-height: 1.21;
+  margin-bottom: 13px;
+}
+
+.button {
+  outline: none;
+  padding: 13px 35px;
+  font-size: 20px;
+  line-height: 1.21;
+  background-color: #F8B653;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 0;
+}
+.button:hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: #ff0000;
+}
+
+.button-price {
+  padding: 17px 40px 18px 66px;
+  background-color: rgb(222, 221, 220);
+  font-size: 24px;
+  line-height: 1.2291666667;
+  color: #000000;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.button-price:hover {
+  background-color: #F8B653;
+  color: white;
+}

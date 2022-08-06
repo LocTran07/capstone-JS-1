@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <nav id="header-top" class="navbar navbar-expand-lg ">
+        <a class="navbar-brand p-0" href="#"><img src="./img/image 3.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-target="#navbarheader">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarheader">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item header-cart">
+              <a href=""><img src="./img/cart.png" alt=""> <span>(1)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Register</a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+      <div id="header-bottom">
+        <ul class="nav">
+          <li class="nav-item line">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Men</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Woman</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Kid</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Sport</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="carousel__Capstone mb-5">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner ">
+            <div class="carousel-item  active ">
+              <img src="./img/image 4.png" class="d-block carousel-content" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Product name</h3>
+                <p>Product description ....</p>
+                <a href="#" class="btn button">Buy now</a>
+              </div>
+              <!-- <div class="carousel-img">
+                    <img src="./img/image6.png" alt="">
+                  </div> -->
+            </div>
+            <div class="carousel-item  ">
+              <img src="./img/image 4.png" class="d-block carousel-content" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Product name</h3>
+                <p>Product description ....</p>
+                <a href="#" class="btn button">Buy now</a>
+              </div>
+              <!-- <div class="carousel-img">
+                    <img src="./img/image6.png" alt="">
+                  </div> -->
+            </div>
+            <div class="carousel-item  ">
+              <img src="./img/image 4.png" class="d-block carousel-content" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Product name</h3>
+                <p>Product description ....</p>
+                <a href="#" class="btn button">Buy now</a>
+              </div>
+
+            </div>
+            <div class="carousel-img">
+              <img src="./img/image6.png" alt="">
+            </div>
+
+          </div>
+
+
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+
+
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+        </div>
+
+      </section>
+      <div style="height:77px"></div>
+      <section class="product text-center ">
+        <h1>-Product Feature -</h1>
+        <div class="product__container" id="tblProduct">
+
+          <!-- <div class="product--card">
+            <div class="card-top">
+              <img src="./img/image 5.png" alt="">
+            </div>
+            <div class="card-bottom">
+              <div class="card-title">
+                <h3>Adidas Prophere</h3>
+                <p>short descript ...</p>
+              </div>
+              <div class="d-flex">
+                <a href="#" class="btn button flex-grow-1">Buy now</button></a>
+                <a href="#" class="btn button-price flex-grow-1">85$</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="product--card">
+            <div class="card-top">
+              <img src="./img/image 5.png" alt="">
+            </div>
+            <div class="card-bottom">
+              <div class="card-title">
+                <h3>Adidas Prophere</h3>
+                <p>short descript ...</p>
+              </div>
+               <div class="d-flex">
+                <a href="#" class="btn button flex-grow-1">Buy now</button></a>
+                <a href="#" class="btn button-price flex-grow-1">85$</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="product--card">
+            <div class="card-top">
+              <img src="./img/image 5.png" alt="">
+            </div>
+            <div class="card-bottom">
+              <div class="card-title">
+                <h3>Adidas Prophere</h3>
+                <p>short descript ...</p>
+              </div>
+              <div class="d-flex">
+                <a href="#" class="btn button flex-grow-1">Buy now</button></a>
+                <a href="#" class="btn button-price flex-grow-1">85$</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="product--card">
+            <div class="card-top">
+              <img src="./img/image 5.png" class="img-fluid" alt="">
+            </div>
+            <div class="card-bottom">
+              <div class="card-title">
+                <h3>Adidas Prophere</h3>
+                <p>short descript ...</p>
+              </div>
+              
+              <div class="d-flex">
+                <a href="#" class="btn button flex-grow-1" >Buy now</button></a>
+                <a href="#" class="btn button-price flex-grow-1">85$</a>
+              </div>
+            </div>
+
+          </div>
+           -->
+         
+        </div>
+
+      </section>
+      
+    </main>
+    <footer>
+        <img src="./img/footer.png" class="img-fluid" alt="">
+      </footer>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
