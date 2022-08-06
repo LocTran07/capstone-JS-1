@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+// bien text
+$text-16px: 16px;
+$text-20px: 20px;
+$text-24px: 24px;
+$text-30px: 30px;
+$text-40px: 40px;
+// bien mau 
+$color-black: black;
+$color-white: white;
+$color-green: #1ED90E;
+$color-gray: #CCCCCC;
+$color-yellow: #E1B067;
+$color-red: #FC0303;
+
+//mixin
+@mixin text ($fs, $fw, $cl) {
+    font-size: $fs ;
+    font-weight: $fw ;
+    color: $cl;
+
+}
+
+/* header */
+#header {
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        align-items: center;
+        padding: 10px 10px;
+
+        img {}
+
+        .info {
+
+            a {
+                color: white;
+                margin-right: 15px;
+                display: inline-block;
+
+                &:hover {
+                    color: $color-white;
+                    text-decoration: none;
+
+                }
+
+                i {
+                    margin-right: 5px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        padding: 10px 0;
+
+        ul {
+
+            li {
+                display: inline-block;
+
+                a {
+                    color: $color-black;
+                    display: inline-block;
+                    margin-left: 15px;
+
+                    &:hover {
+                        color: $color-black;
+                        text-decoration: none;
+
+                    }
+
+                }
+            }
+        }
+
+    }
+}
+
+/* header */
+
+// <!-- form  -->
+.form {
+
+    .container {
+        max-width: 1000px;
+
+        h4 {
+            @include text ($text-40px, 400, $color-black);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .row {
+
+            .col-md-6 {
+                padding: 0 30px;
+                .form-group {
+
+                    .label {
+
+                        p {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 0;
+                            border-bottom: 4px solid #AE18E2;
+
+                            input {
+                                @include text ($text-30px, 400, $color-black);
+                                margin-bottom: 0;
+                                border: 0
+
+                            }
+
+                            span {
+                                @include text ($text-30px, 400, $color-red);
+
+                            }
+
+                        }
+                    }
+
+                    input {
+                        display: inline-block;
+                        margin-top: 15px
+
+
+                    }
+
+                    span {
+                        @include text ($text-30px, 400, $color-black);
+                        display: inline-block;
+
+
+                    }
+
+                    label {
+                        @include text ($text-30px, 400, $color-black);
+
+                        display: inline-block;
+
+                    }
+
+                    .valid {
+                        @include text ($text-20px, 400, $color-red);
+                        display: block
+                    }
+                }
+
+                .form-group1 {
+                    span {
+                        @include text ($text-30px, 400, $color-black);
+                        display: inline-block;
+                        margin-right: 20px;
+
+                    }
+
+                    .valid {
+                        @include text ($text-20px, 400, $color-red);
+                        display: block;
+                    }
+
+                    label {
+                        @include text ($text-30px, 400, $color-black);
+
+                        display: inline-block;
+                        margin-right: 20px
+                    }
+                    input{
+                        margin-right: 20px;
+                        background-color: $color-gray;
+                    }
+
+
+                }
+                button{
+                    background-color: #AE18E2;
+                    font-size: 30px;
+                    color: white;
+                    padding: 0px 50px;
+                }
+            }
+        }
+    }
+
+}
+    // <!-- form  -->
+
+
+
+
+
+
+
+    // footer 
+    footer {
+        padding: 50px 0;
+
+        .footer1 {
+            background-color: #F8F8F8;
+            padding: 20px 0;
+        }
+
+        .footer2 {
+            background-color: #DEDDDC;
+            padding: 20px 0;
+
+        }
+
+        .container {
+            padding: 0 100px;
+
+            .row {
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        font-size: 15px;
+
+                        h5 {
+                            @include text($text-20px, 600, $color-black )
+                        }
+
+                        a {
+                            font-size: 15px;
+                            color: #FC0303;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+
+            .row1 {
+
+                .col-md-4 {}
+            }
+
+            .row2 {
+
+
+                .col-md-4 {}
+            }
+
+        }
+    }
+
+
+// footer 
