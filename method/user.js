@@ -1,8 +1,8 @@
 class User {
     constructor() { }
-    email= '';
-    password= '';
-    name= '';
-    gender= '';
-    phone= '';
+    email = '';
+    password = '';
+    name = '';
+    gender = true;
+    phone = '';
 }

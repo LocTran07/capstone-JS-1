@@ -101,17 +101,36 @@ $color-red: #FC0303;
             position: relative;
 
             img {
-                width: 60%;
+                max-width: 60%;
                 height: auto;
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+                @media screen and (min-width : 768px) {
+                    max-width: 80%;
+
+                }
+    
             }
+            @media screen and (max-width : 575px) {
+                margin-top: 40px;
+            }
+            @media screen and (min-width : 576px) {
+                margin-top: 40px;
+            }
+
         }
 
         .col-md-8 {
             padding-left: 113px;
+            @media screen and (max-width : 575px) {
+                margin-top: 80px;
+            }
+            @media screen and (min-width : 576px) {
+                margin-top: 80px;
+            }
+
 
             h5 {
                 @include text($text-30px, 300, $color-black );
