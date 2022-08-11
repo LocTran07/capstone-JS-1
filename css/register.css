@@ -53,74 +53,76 @@
   text-align: center;
   margin-bottom: 30px;
 }
-.form .container .row .col-md-6 {
+.form .container .row .col-md-12 {
   padding: 0 30px;
 }
-.form .container .row .col-md-6 .form-group .label p {
+.form .container .row .col-md-12 .form-group .label p {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0;
   border-bottom: 4px solid #AE18E2;
 }
-.form .container .row .col-md-6 .form-group .label p input {
+.form .container .row .col-md-12 .form-group .label p input {
   font-size: 30px;
   font-weight: 400;
   color: black;
   margin-bottom: 0;
   border: 0;
+  outline: white;
 }
-.form .container .row .col-md-6 .form-group .label p span {
+.form .container .row .col-md-12 .form-group .label p span {
   font-size: 30px;
   font-weight: 400;
   color: #FC0303;
 }
-.form .container .row .col-md-6 .form-group input {
+.form .container .row .col-md-12 .form-group input {
   display: inline-block;
   margin-top: 15px;
+  outline: white;
 }
-.form .container .row .col-md-6 .form-group span {
+.form .container .row .col-md-12 .form-group span {
   font-size: 30px;
   font-weight: 400;
   color: black;
   display: inline-block;
 }
-.form .container .row .col-md-6 .form-group label {
+.form .container .row .col-md-12 .form-group label {
   font-size: 30px;
   font-weight: 400;
   color: black;
   display: inline-block;
 }
-.form .container .row .col-md-6 .form-group .valid {
+.form .container .row .col-md-12 .form-group .valid {
   font-size: 20px;
   font-weight: 400;
   color: #FC0303;
   display: block;
 }
-.form .container .row .col-md-6 .form-group1 span {
+.form .container .row .col-md-12 .form-group1 span {
   font-size: 30px;
   font-weight: 400;
   color: black;
   display: inline-block;
   margin-right: 20px;
 }
-.form .container .row .col-md-6 .form-group1 .valid {
+.form .container .row .col-md-12 .form-group1 .valid {
   font-size: 20px;
   font-weight: 400;
   color: #FC0303;
   display: block;
 }
-.form .container .row .col-md-6 .form-group1 label {
+.form .container .row .col-md-12 .form-group1 label {
   font-size: 30px;
   font-weight: 400;
   color: black;
   display: inline-block;
   margin-right: 20px;
 }
-.form .container .row .col-md-6 .form-group1 input {
+.form .container .row .col-md-12 .form-group1 input {
   margin-right: 20px;
   background-color: #CCCCCC;
 }
-.form .container .row .col-md-6 button {
+.form .container .row .col-md-12 button {
   background-color: #AE18E2;
   font-size: 30px;
   color: white;

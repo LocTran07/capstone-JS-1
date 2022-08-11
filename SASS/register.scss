@@ -102,8 +102,9 @@ $color-red: #FC0303;
 
         .row {
 
-            .col-md-6 {
+            .col-md-12 {
                 padding: 0 30px;
+
                 .form-group {
 
                     .label {
@@ -117,8 +118,8 @@ $color-red: #FC0303;
                             input {
                                 @include text ($text-30px, 400, $color-black);
                                 margin-bottom: 0;
-                                border: 0
-
+                                border: 0;
+                                outline: white
                             }
 
                             span {
@@ -131,9 +132,8 @@ $color-red: #FC0303;
 
                     input {
                         display: inline-block;
-                        margin-top: 15px
-
-
+                        margin-top: 15px;
+                        outline: white
                     }
 
                     span {
@@ -175,14 +175,17 @@ $color-red: #FC0303;
                         display: inline-block;
                         margin-right: 20px
                     }
-                    input{
+
+                    input {
                         margin-right: 20px;
                         background-color: $color-gray;
+                        
                     }
 
 
                 }
-                button{
+
+                button {
                     background-color: #AE18E2;
                     font-size: 30px;
                     color: white;
@@ -193,7 +196,8 @@ $color-red: #FC0303;
     }
 
 }
-    // <!-- form  -->
+
+// <!-- form  -->
 
 
 
@@ -201,58 +205,58 @@ $color-red: #FC0303;
 
 
 
-    // footer 
-    footer {
-        padding: 50px 0;
+// footer 
+footer {
+    padding: 50px 0;
 
-        .footer1 {
-            background-color: #F8F8F8;
-            padding: 20px 0;
-        }
+    .footer1 {
+        background-color: #F8F8F8;
+        padding: 20px 0;
+    }
 
-        .footer2 {
-            background-color: #DEDDDC;
-            padding: 20px 0;
+    .footer2 {
+        background-color: #DEDDDC;
+        padding: 20px 0;
 
-        }
+    }
 
-        .container {
-            padding: 0 100px;
+    .container {
+        padding: 0 100px;
 
-            .row {
+        .row {
 
-                ul {
-                    list-style: none;
+            ul {
+                list-style: none;
 
-                    li {
+                li {
+                    font-size: 15px;
+
+                    h5 {
+                        @include text($text-20px, 600, $color-black )
+                    }
+
+                    a {
                         font-size: 15px;
-
-                        h5 {
-                            @include text($text-20px, 600, $color-black )
-                        }
-
-                        a {
-                            font-size: 15px;
-                            color: #FC0303;
-                            text-decoration: none;
-                        }
+                        color: #FC0303;
+                        text-decoration: none;
                     }
                 }
             }
-
-            .row1 {
-
-                .col-md-4 {}
-            }
-
-            .row2 {
-
-
-                .col-md-4 {}
-            }
-
         }
+
+        .row1 {
+
+            .col-md-4 {}
+        }
+
+        .row2 {
+
+
+            .col-md-4 {}
+        }
+
     }
+}
 
 
 // footer 

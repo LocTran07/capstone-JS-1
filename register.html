@@ -55,7 +55,7 @@
         <div class="container">
             <h4>Resgister</h4>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6 ">
                     <div class="form-group">
                         <div class="label">
                             <p><input name="email" placeholder="Email" type="text"><span>(*)</span></p>
@@ -74,7 +74,7 @@
                     </div>
                     <div class="form-group">
                         <div class="label">
-                            <p><input placeholder=" Password confirm" type="text"><span>(*)</span></p>
+                            <p><input id="pwcf" placeholder=" Password confirm" type="password"><span>(*)</span></p>
                             <span id="valid-pwc-1" class="valid"></span>
                             <span id="valid-pwc-2" class="valid"></span>
 
@@ -82,7 +82,7 @@
                         
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6">
                     <div class="form-group">
                         <div class="label ">
                             <p><input name="name"  placeholder="Name" type="text"><span>(*)</span></p>
@@ -103,7 +103,7 @@
                     </div>
                     <div class="form-group1">
                         <span for="">Gender</span>
-                        <input id="male" name="gender" value="true" type="radio"><label for="male">Male</label>
+                        <input checked id="male" name="gender" value="true" type="radio"><label for="male">Male</label>
                         <input id="female" name="gender" value="false" type="radio"><label for="female">Female</label>
                         <span id="valid-gender-1" class="valid"></span>
                     </div>
@@ -216,6 +216,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+        integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./Validation.js"></script>
     <script src="./method/user.js"></script>
     <script src="./controller/register.js"></script>
 </body>
