@@ -172,6 +172,7 @@ $color-red: #FC0303;
                             padding: 3px 17px;
 
                         }
+                        
                     }
                 }
 
@@ -284,8 +285,13 @@ $color-red: #FC0303;
                             padding: 10px 0;
 
                             p {
+
                                 @include text($text-24px, 300, $color-black );
                                 margin: 0;
+                                a{
+                                    color: black;
+                                    text-decoration: none
+                                }
                             }
                         }
 

@@ -48,7 +48,7 @@ function taoBang(mang) {
             </div>
             <div class="row card-bottom">
                 <div class="col-md-6 col-left">
-                    <p>Buy now</p>
+                    <p><a href="./detail.html?product=${a.id}">Buy now </a></p>
                 </div>
                 <div class="col-md-6 col-right">
                     <p>${a.price}</p>
