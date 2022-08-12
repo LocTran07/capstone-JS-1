@@ -28,6 +28,7 @@ function kiemTraChucVu(value, selectorError, name) {
 function passWordConfirm(value1, value2, selectorError, name) {
     // loại bỏ khoảng trống đầu và cuối của chuỗi, trim
     if (value1.trim() === value2.trim()) {
+        document.querySelector(selectorError).innerHTML = ''
         return true
     }
     document.querySelector(selectorError).innerHTML = name + " " + 'không trùng khớp '
@@ -46,7 +47,7 @@ function kiemTraTatCaLaKyTu(value, selectorError, name) {
         document.querySelector(selectorError).innerHTML = '';
         return true
     }
-    document.querySelector(selectorError).innerHTML = name + " " + 'phải là chữ'
+    document.querySelector(selectorError).innerHTML = name + " " + 'phải là chữ không dấu'
     return false
 }
 
