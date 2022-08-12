@@ -90,6 +90,11 @@
     margin-top: 80px;
   }
 }
+@media screen and (max-width: 767.9px) {
+  .product-detail .row .col-md-8 {
+    padding-left: 0;
+  }
+}
 .product-detail .row .col-md-8 h5 {
   font-size: 30px;
   font-weight: 300;
@@ -137,6 +142,12 @@
   display: inline-block;
   padding: 10px;
   background-color: #CCCCCC;
+}
+@media screen and (max-width: 550px) {
+  .product-detail .row .col-md-8 a {
+    margin-top: 10px;
+    min-width: 51px;
+  }
 }
 .product-detail .row .col-md-8 a:hover {
   color: black;

@@ -11,7 +11,7 @@ function renderProductInfo(arrProductInfo) {
                         </div>
                         <div class="row card-bottom">
                             <div class="col-md-6 col-left">
-                            <a href="./detail.html?product${pt.id}" class="btn button flex-grow-1">Buy now </a>
+                            <a href="./detail.html?product=${pt.id}" class="btn button flex-grow-1">Buy now </a>
                             </div>
                             <div class="col-md-6 col-right">
                                 <p>${pt.price}</p>
