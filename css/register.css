@@ -70,6 +70,11 @@
   border: 0;
   outline: white;
 }
+@media screen and (max-width: 475px) {
+  .form .container .row .col-md-12 .form-group .label p input {
+    max-width: 80%;
+  }
+}
 .form .container .row .col-md-12 .form-group .label p span {
   font-size: 30px;
   font-weight: 400;
@@ -105,6 +110,11 @@
   display: inline-block;
   margin-right: 20px;
 }
+@media screen and (max-width: 475px) {
+  .form .container .row .col-md-12 .form-group1 span {
+    font-size: 25px;
+  }
+}
 .form .container .row .col-md-12 .form-group1 .valid {
   font-size: 20px;
   font-weight: 400;
@@ -118,9 +128,20 @@
   display: inline-block;
   margin-right: 20px;
 }
+@media screen and (max-width: 475px) {
+  .form .container .row .col-md-12 .form-group1 label {
+    font-size: 25px;
+    margin-right: 5px;
+  }
+}
 .form .container .row .col-md-12 .form-group1 input {
   margin-right: 20px;
   background-color: #CCCCCC;
+}
+@media screen and (max-width: 475px) {
+  .form .container .row .col-md-12 .form-group1 input {
+    margin-right: 3px;
+  }
 }
 .form .container .row .col-md-12 button {
   background-color: #AE18E2;

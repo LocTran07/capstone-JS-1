@@ -14,10 +14,10 @@ document.querySelector('#btnuser').onclick = () => {
     })
     console.log(user)
     let pwcf = document.getElementById('pwcf').value
-
+    let str = user.name.replace(/\s+/g,''); 
     let valid = true
     //bỏ trống 
-    valid = kiemTraRong(user.email, '#valid-email-1', 'Email') & kiemTraLaEmail(user.email, '#valid-email-2', 'Email') & kiemTraRong(user.password, '#valid-pw-1', 'Password') & passWordConfirm(user.password,pwcf, '#valid-pwc-1', 'Password') & kiemTraRong(user.name,'#valid-name-1','Name') &  kiemTraTatCaLaKyTu(user.name,'#valid-name-2','Name') & kiemTraRong (user.phone,'#valid-phone-1','Phone') & kiemTraTatCaLaSo(user.phone,'#valid-phone-2','Phone' )
+    valid = kiemTraRong(user.email, '#valid-email-1', 'Email') & kiemTraLaEmail(user.email, '#valid-email-2', 'Email') & kiemTraRong(user.password, '#valid-pw-1', 'Password') & passWordConfirm(user.password, pwcf, '#valid-pwc-1', 'Password') & kiemTraRong(user.name, '#valid-name-1', 'Name') & kiemTraTatCaLaKyTu(str, '#valid-name-2', 'Name') & kiemTraRong(user.phone, '#valid-phone-1', 'Phone') & kiemTraTatCaLaSo(user.phone, '#valid-phone-2', 'Phone')
     console.log(valid)
     if (!valid) {
         return
