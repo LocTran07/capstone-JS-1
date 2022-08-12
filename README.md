@@ -21,7 +21,10 @@ Tuệ làm:
 
 - Deloyment trang web
 - Phân công việc
-  Lộc làm còn lại:
+
+<!-- -----  -->
+
+Lộc làm còn lại:
 
 - Dàn 2 layout giao diện:
 
