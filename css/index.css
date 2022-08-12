@@ -5,12 +5,13 @@ html {
 * {
   margin: 0;
   padding: 0;
+  font-family: "Inter", sans-serif;
 }
 
 body {
   line-height: 1;
   font-family: "Inter", sans-serif;
-  color: #000000;
+  color: black;
   font-weight: 300;
   background-color: #F5F5F5;
 }
@@ -45,7 +46,7 @@ body {
 }
 
 header #header-top {
-  background: #000000;
+  background: black;
   padding: 10px 50px 8px 24px;
 }
 header #header-top .nav-item {
@@ -71,7 +72,7 @@ header #header-bottom .nav-item.line::after {
   content: "";
   width: 100%;
   height: 1px;
-  background-color: #000000;
+  background-color: black;
   display: block;
 }
 header #header-bottom .nav-item:hover::after {
@@ -81,13 +82,13 @@ header #header-bottom .nav-item::after {
   content: "";
   width: 0%;
   height: 1px;
-  background-color: #000000;
+  background-color: black;
   display: block;
   transition: 0.5s;
 }
 header #header-bottom .nav-item .nav-link {
   padding: 15px 0 10px;
-  color: #000000;
+  color: black;
   font-size: 20px;
   line-height: 1.2;
 }
@@ -130,7 +131,7 @@ header #header-bottom .nav-item:nth-of-type(4) {
   text-align: left;
   top: 104px;
   left: 60%;
-  color: #000000;
+  color: black;
 }
 .carousel__Capstone .carousel-inner .carousel-item .carousel-caption h3 {
   font-size: 40px;
@@ -151,31 +152,71 @@ header #header-bottom .nav-item:nth-of-type(4) {
   z-index: 2;
 }
 
-.product--card {
-  background: #F8F8F8;
+.row .col-md-4 {
+  padding: 15px 15px;
 }
-.product--card .card-top {
-  padding: 45px 57px 0;
-  margin-bottom: 30px;
+.row .col-md-4 .card {
+  position: relative;
+  background-color: #F8F8F8;
+  border: none;
+  padding-top: 45px;
 }
-.product--card .card-bottom {
-  text-align: left;
+.row .col-md-4 .card img {
+  width: 60%;
+  height: auto;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.product--card .card-bottom .card-title {
-  padding-left: 23px;
-}
-.product--card .card-bottom h3 {
+.row .col-md-4 .card .card-body h4 {
   font-size: 24px;
-  line-height: 1.2291666667;
-  margin-bottom: 8px;
-  font-style: normal;
-  font-weight: 200;
+  font-weight: 300;
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.product--card .card-bottom p {
-  color: rgb(203, 201, 201);
+.row .col-md-4 .card .card-body p {
   font-size: 20px;
-  line-height: 1.21;
-  margin-bottom: 13px;
+  font-weight: 300;
+  color: #CBC9C9;
+  overflow: hidden;
+  line-height: 2rem;
+  max-height: 8rem;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+}
+.row .col-md-4 .card .card-bottom {
+  text-align: center;
+}
+.row .col-md-4 .card .card-bottom.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.row .col-md-4 .card .card-bottom .col-left {
+  background: #E1B067;
+  padding: 10px 0;
+}
+.row .col-md-4 .card .card-bottom .col-left p {
+  font-size: 24px;
+  font-weight: 300;
+  color: black;
+  margin: 0;
+}
+.row .col-md-4 .card .card-bottom .col-right {
+  background: #DEDDDC;
+  padding: 10px 0;
+}
+.row .col-md-4 .card .card-bottom .col-right p {
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+  margin: 22px;
 }
 
 .button {
@@ -183,7 +224,7 @@ header #header-bottom .nav-item:nth-of-type(4) {
   padding: 13px 35px;
   font-size: 20px;
   line-height: 1.21;
-  background-color: #F8B653;
+  background-color: #E1B067;
   color: rgb(255, 255, 255);
   cursor: pointer;
   transition: 0.5s;
@@ -192,7 +233,6 @@ header #header-bottom .nav-item:nth-of-type(4) {
 .button:hover {
   text-decoration: none;
   color: rgb(255, 255, 255);
-  background-color: #ff0000;
 }
 
 .button-price {

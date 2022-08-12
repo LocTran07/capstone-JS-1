@@ -10,6 +10,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  <!-- gg font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:ital,wght@0,400;0,700;1,300;1,600&display=swap"
+      rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
   <link rel="stylesheet" href="./css/index.css" />
@@ -32,7 +38,7 @@
               <a class="nav-link" href="#">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Register</a>
+              <a class="nav-link" href="./register.html">Register</a>
             </li>
 
           </ul>
@@ -122,74 +128,110 @@
       <div style="height:77px"></div>
       <section class="product text-center ">
         <h1>-Product Feature -</h1>
-        <div class="product__container" id="tblProduct">
+        <div class="row" id="tblProduct">
 
-          <!-- <div class="product--card">
-            <div class="card-top">
-              <img src="./img/image 5.png" alt="">
-            </div>
-            <div class="card-bottom">
-              <div class="card-title">
-                <h3>Adidas Prophere</h3>
-                <p>short descript ...</p>
-              </div>
-              <div class="d-flex">
-                <a href="#" class="btn button flex-grow-1">Buy now</button></a>
-                <a href="#" class="btn button-price flex-grow-1">85$</a>
-              </div>
-            </div>
-
-          </div>
-          <div class="product--card">
-            <div class="card-top">
-              <img src="./img/image 5.png" alt="">
-            </div>
-            <div class="card-bottom">
-              <div class="card-title">
-                <h3>Adidas Prophere</h3>
-                <p>short descript ...</p>
-              </div>
-               <div class="d-flex">
-                <a href="#" class="btn button flex-grow-1">Buy now</button></a>
-                <a href="#" class="btn button-price flex-grow-1">85$</a>
-              </div>
-            </div>
-
-          </div>
-          <div class="product--card">
-            <div class="card-top">
-              <img src="./img/image 5.png" alt="">
-            </div>
-            <div class="card-bottom">
-              <div class="card-title">
-                <h3>Adidas Prophere</h3>
-                <p>short descript ...</p>
-              </div>
-              <div class="d-flex">
-                <a href="#" class="btn button flex-grow-1">Buy now</button></a>
-                <a href="#" class="btn button-price flex-grow-1">85$</a>
-              </div>
-            </div>
-
-          </div>
-          <div class="product--card">
-            <div class="card-top">
-              <img src="./img/image 5.png" class="img-fluid" alt="">
-            </div>
-            <div class="card-bottom">
-              <div class="card-title">
-                <h3>Adidas Prophere</h3>
-                <p>short descript ...</p>
-              </div>
-              
-              <div class="d-flex">
-                <a href="#" class="btn button flex-grow-1" >Buy now</button></a>
-                <a href="#" class="btn button-price flex-grow-1">85$</a>
-              </div>
-            </div>
-
-          </div>
-           -->
+     <!-- <div class="col-md-4">
+                    <div class="card card1">
+                        <img src="./img/image 5.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Adidas Prophere</h4>
+                            <p class="card-text">short descript ...</p>
+                        </div>
+                        <div class="row card-bottom">
+                            <div class="col-md-6 col-left">
+                                <p>Buy now</p>
+                            </div>
+                            <div class="col-md-6 col-right">
+                                <p>85$</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card2">
+                        <img src="./img/image 5.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Adidas Prophere</h4>
+                            <p class="card-text">short descript ...</p>
+                        </div>
+                        <div class="row card-bottom">
+                            <div class="col-md-6 col-left">
+                                <p>Buy now</p>
+                            </div>
+                            <div class="col-md-6 col-right">
+                                <p>85$</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card3">
+                        <img src="./img/image 5.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Adidas Prophere</h4>
+                            <p class="card-text">short descript ...</p>
+                        </div>
+                        <div class="row card-bottom">
+                            <div class="col-md-6 col-left">
+                                <p>Buy now</p>
+                            </div>
+                            <div class="col-md-6 col-right">
+                                <p>85$</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card4">
+                        <img src="./img/image 5.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Adidas Prophere</h4>
+                            <p class="card-text">short descript ...</p>
+                        </div>
+                        <div class="row card-bottom">
+                            <div class="col-md-6 col-left">
+                                <p>Buy now</p>
+                            </div>
+                            <div class="col-md-6 col-right">
+                                <p>85$</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card5">
+                        <img src="./img/image 5.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Adidas Prophere</h4>
+                            <p class="card-text">short descript ...</p>
+                        </div>
+                        <div class="row card-bottom">
+                            <div class="col-md-6 col-left">
+                                <p>Buy now</p>
+                            </div>
+                            <div class="col-md-6 col-right">
+                                <p>85$</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card6">
+                        <img src="./img/image 5.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Adidas Prophere</h4>
+                            <p class="card-text">short descript ...</p>
+                        </div>
+                        <div class="row card-bottom">
+                            <div class="col-md-6 col-left">
+                                <p>Buy now</p>
+                            </div>
+                            <div class="col-md-6 col-right">
+                                <p>85$</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
          
         </div>
 
@@ -206,9 +248,14 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./controller/index.js"></script>
 </body>
 
 </html>

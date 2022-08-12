@@ -5,14 +5,36 @@ $background-color:#F5F5F5;
 $color-black:#000000;
 $text-color-white:#F7F7F7;
 
+// bien text
+$text-16px: 16px;
+$text-20px: 20px;
+$text-24px: 24px;
+$text-30px: 30px;
+$text-40px: 40px;
+// bien mau 
+$color-black: black;
+$color-white: white;
+$color-green: #1ED90E;
+$color-gray: #CCCCCC;
+$color-yellow: #E1B067;
+$color-red: #FC0303;
 
+//mixin
+@mixin text ($fs, $fw, $cl) {
+    font-size: $fs ;
+    font-weight: $fw ;
+    color: $cl;
+
+}
 
 html {
     box-sizing: border-box;
+   
   }
   * {
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
   }
 body {
     line-height: 1;
@@ -197,40 +219,119 @@ header {
 
 }
 
-.product--card{
-    background: #F8F8F8;
-    .card-top{
-        padding: 45px 57px 0;
-        margin-bottom: 30px;
+// .product--card{
+//     background: #F8F8F8;
+//     .card-top{
+//         padding: 45px 57px 0;
+//         margin-bottom: 30px;
+//     }
+//     .card-bottom{
+//         text-align: left;
+//         .card-title{
+//             padding-left: 23px;
+//         }
+//         h3{
+//             font-size: 24px;
+//             line-height: calc(29.5/24);
+//             margin-bottom: 8px;
+//             font-style: normal;
+//             font-weight: 200;
+//         }
+//         p{  
+//             color: rgba(203, 201, 201, 1);
+//             font-size: 20px;
+//             line-height: calc(24.2/20);
+//             // font-weight: 300;
+//             margin-bottom: 13px;
+//         }
+//     }
+// }
+ .row {
+
+        .col-md-4 {
+            padding: 15px 15px;
+
+            .card {
+                position: relative;
+                background-color: #F8F8F8;
+                border: none;
+                padding-top: 45px;
+
+                img {
+                    width: 60%;
+                    height: auto;
+                    position: relative;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                .card-body {
+
+                    h4 {
+                        @include text($text-24px, 300, $color-black );
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        // width: 309px;
+                    }
+
+                    p {
+                        @include text($text-20px, 300, #CBC9C9);
+                        overflow: hidden;
+                        line-height: 2rem;
+                        max-height: 8rem;
+                        -webkit-box-orient: vertical;
+                        display: block;
+                        display: -webkit-box;
+                        overflow: hidden !important;
+                        text-overflow: ellipsis;
+                        -webkit-line-clamp: 3;
+                        // max-width: 309px;
+
+                    }
+                }
+
+                .card-bottom {
+                    text-align: center;
+
+
+                    &.row {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+
+                    .col-left {
+                        background: #E1B067;
+                        padding: 10px 0;
+                        
+
+                        p {
+                            @include text($text-24px, 300, $color-black );
+                            margin: 0;
+                        }
+                    }
+
+                    .col-right {
+                        background: #DEDDDC;
+                        padding: 10px 0;
+                        p {
+                            @include text($text-24px, 600, $color-black );
+                            margin: 22px;
+
+                        }
+                    }
+                }
+            }
+        }
     }
-    .card-bottom{
-        text-align: left;
-        .card-title{
-            padding-left: 23px;
-        }
-        h3{
-            font-size: 24px;
-            line-height: calc(29.5/24);
-            margin-bottom: 8px;
-            font-style: normal;
-            font-weight: 200;
-        }
-        p{  
-            color: rgba(203, 201, 201, 1);
-            font-size: 20px;
-            line-height: calc(24.2/20);
-            // font-weight: 300;
-            margin-bottom: 13px;
-        }
-    }
-}
 .button{
     
     outline: none;
     padding: 13px 35px;
     font-size: 20px;
     line-height: calc(24.2/20);
-    background-color: #F8B653;
+    background-color: #E1B067;
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
     transition: .5s;
@@ -239,7 +340,7 @@ header {
     &:hover{
         text-decoration: none;
         color: rgba(255, 255, 255, 1);
-        background-color:  #ff0000;
+        // background-color:  #ff0000;
     }
 }
 .button-price{

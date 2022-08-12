@@ -1,55 +1,42 @@
-function layDanhSachProductApi () {
- 
-    var promise = axios({
-        URL : 'https://shop.cyberlearn.vn/api/Product',
-        Method: 'GET'
-       })
-       // xử lý thành công 
-       promise.then(function(result) {
-           console.log(result.data.content);
-           //sau khi lấy dữ liệu từ BE về dùng dữ liệu đó tạo ra tr trên table 
-           renderProductInfo(result.data.content);
-       });
-       //xử lý thất bại
-       promise.catch(function(error) {
-   
-       });
-   }
-   // gọi hàm lấy dữ liệu từ sever khi trang web vừa load xong
-   window.onload = function() {
-        layDanhSachProductApi();
-   }
-
-
-
-
-
-
-
-
-function renderProductInfo(arrProductInfo) { //param : input :arr
-    var html = ''; //output: string html 
-    for (var i = 0; i < arrProductInfo.length; i++) {
-    var pt = arrProductInfo[i]; //Mỗi lần duyệt lấy ra 1 object ProductInfo từ mảng 
-        html += `
-                <div class="product--card">
-                <div class="card-top">
-                  <img src="${pt.img}" class="img-fluid" alt="">
+function renderProductInfo(arrProductInfo) {
+    var html = ''
+    arrProductInfo.forEach(function (pt) {
+      html += `
+      <div class="col-md-4">
+                    <div class="card card1">
+                        <img src="${pt.image}" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">${pt.name}</h4>
+                            <p class="card-text">${pt.description}</p>
+                        </div>
+                        <div class="row card-bottom">
+                            <div class="col-md-6 col-left">
+                            <a href="./detail.html?product${pt.id}" class="btn button flex-grow-1">Buy now </a>
+                            </div>
+                            <div class="col-md-6 col-right">
+                                <p>${pt.price}</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-bottom">
-                  <div class="card-title">
-                    <h3>${pt.name}</h3>
-                    <p>${pt.description}</p>
-                  </div>
-                  
-                  <div class="d-flex">
-                    <a href="./detail.html?product=${pt.id}" class="btn button flex-grow-1">Buy now</button></a>
-                    <a href="#" class="btn button-price flex-grow-1">${pt.price}</a>
-                  </div>
-                </div>
-    
-              </div>
-            `;
-        }
-        document.querySelector('#tblProduct').innerHTML = html;
+  `;
+    })
+  document.querySelector('#tblProduct').innerHTML = html;
 }
+
+
+const layDanhSachProductApi= ()=>{
+    axios({
+      url:"https://shop.cyberlearn.vn/api/Product",
+      method:"GET"
+    }).then((result)=>
+      renderProductInfo(result.data.content)
+    ). catch((error) =>{
+        console.log(error)
+    })
+}
+     // gọi hàm lấy dữ liệu từ sever khi trang web vừa load xong
+     layDanhSachProductApi()
+         
+
+     
